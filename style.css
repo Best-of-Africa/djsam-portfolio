@@ -165,7 +165,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/djgroove.png") no-repeat center;
+    background: url("images/djsam_pic.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -261,6 +261,15 @@ section .title::after{
 /* .skills {
     background-image: url(images/original.gif);
 } */
+
+.responsive-video {
+    display: block;
+    margin: 0 auto; /* Center the video horizontally */
+    max-width: 100%; /* Ensure the video doesn't exceed the width of its container */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  }
+  
+
 
 .skills .title::after{
     content: "Avec DjSaM";
@@ -434,24 +443,55 @@ section .title::after{
     
     background-size: initial; 
     background-repeat: no-repeat;
-    place-items: center;    
+    place-items: center;  
 }
 #playlist {
     list-style: none;
     margin-top: 5px;
-    font-size: 20px;
+    font-size: 16px;
   }
-  #playlist li a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    margin-top: 0px;
-    
+#playlist ul {
+    list-style-type: none;
+    padding: 0;
   }
-  #playlist .current-song a {
-    color:black;
+ 
+  #playlist ul li {
+    margin-bottom: 10px;
   }
 
+  #playlist li a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;   
+    
+  }
+#playlist ul li a:hover {
+    color: red;
+  }
+
+  #playlist .current-song a {
+    color:rgb(176, 251, 16);
+  }
+
+
+  /* .playlist ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .playlist ul li {
+    margin-bottom: 10px;
+  }
+  
+  .playlist ul li a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .playlist ul li a:hover {
+    color: red;
+  } */
+  
 
 
 /* Contact Section Styles */
